@@ -1,32 +1,84 @@
 /*Портфолио*/
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+// .filter {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 50px;
+//   list-style: none;
+
 .filter {
+  margin-bottom: -15px;
+
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+
+  @include for-size(tablet) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  @include for-size(desktop) {
+    padding-bottom: 50px;
+  }
 }
 .filter__item {
+  margin-bottom: 15px;
+
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @include for-size(tablet) {
+    margin-bottom: 0;
   }
 }
 
 /* Примеры работ */
 .work-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
   margin-bottom: -30px;
-  list-style: none;
-  transition: outline 250ms var(--timing-function),
-    box-shadow 250ms var(--timing-function);
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 .work-set__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
   margin-bottom: 30px;
-  list-style: none;
+
+  border: 1px solid #eeeeee;
+
+  @include for-size(tablet) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @include for-size(desktop) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
+// .work-set__item {
+//   flex-basis: calc(100% / 3 - 30px);
+//   margin-left: 30px;
+//   margin-bottom: 30px;
+//   list-style: none;
+// }
 .work-set__link {
   display: block;
   text-decoration: none;

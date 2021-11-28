@@ -1366,32 +1366,93 @@ img {
 }
 
 /*Портфолио*/
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .filter {
+  margin-bottom: -15px;
+}
+
+@media (min-width: 768px) {
+  .filter {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-filter {
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-filter {
+    padding-bottom: 50px;
+  }
+}
+
+.filter__item {
+  margin-bottom: 15px;
 }
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
+@media (min-width: 768px) {
+  .filter__item {
+    margin-bottom: 0;
+  }
+}
+
 /* Примеры работ */
 .work-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
   margin-bottom: -30px;
-  list-style: none;
-  transition: outline 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+}
+
+@media (min-width: 768px) {
+  .work-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .work-set__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
   margin-bottom: 30px;
-  list-style: none;
+  border: 1px solid #eeeeee;
+}
+
+@media (min-width: 768px) {
+  .work-set__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .work-set__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .work-set__link {
