@@ -1,0 +1,33 @@
+/*Чем мы занимаемся*/
+.image-set {
+  display: flex;
+  text-align: center;
+  margin: 0px -30px 0px 0px;
+  padding: 0px;
+}
+.image-set__item {
+  position: relative;
+  z-index: -1;
+}
+.image-set__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.image-set__title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.image-set__background {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--logo-bg-white-color);
+}

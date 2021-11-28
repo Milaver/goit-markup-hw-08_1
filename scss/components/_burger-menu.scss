@@ -1,0 +1,24 @@
+.burger-menu {
+  @include flexible();
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  .burger-menu__icon {
+    fill: currentColor;
+
+    transition: fill 250ms var(--timing-function);
+  }
+  @include for-size(tablet) {
+    display: none;
+  }
+  &:hover .burger-menu__icon,
+  &:focus .burger-menu__icon {
+    fill: var(--accent-color);
+  }
+}
+  .burger-icon-icon {
+    width: 40px;
+    height: 40px;
+  }

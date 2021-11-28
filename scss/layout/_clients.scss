@@ -1,0 +1,44 @@
+/* Наши клиенты */
+.clients__menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.clients__item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  height: 92px;
+
+  @include for-size(tablet) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  @include for-size(desktop) {
+    flex-basis: calc(100% / 6 - 30px);
+  }
+}
+.clients__link {
+  @include flexible(flex);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border-client);
+  border-radius: 4px;
+  transition: color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--border-client);
+  transition: fill 250ms var(--timing-function);
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-color);
+  }
+}

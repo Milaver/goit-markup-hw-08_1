@@ -1,0 +1,42 @@
+/* Блок соцсетей */
+.social-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.team-social-menu {
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+.social-menu__item {
+  width: 44px;
+  height: 44px;
+}
+.social-menu__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-menu__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--logo-bg-white-color);
+  }
+}
+
+.social-menu__icon {
+  fill: var(--border-client);
+  .social-menu__link:hover &,
+  .social-menu__link:focus & {
+    fill: var(--logo-bg-white-color);
+  }
+}

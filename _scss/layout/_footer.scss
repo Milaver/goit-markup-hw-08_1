@@ -1,0 +1,120 @@
+/* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-footer-bg-color);
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footter__address {
+  margin-right: 70px;
+}
+.footer__logo {
+  display: block;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+.footer__logo--accent-logo {
+  color: var(--logo-bg-white-color);
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.address__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__link_map {
+  color: var(--logo-bg-white-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__social-container {
+  margin-right: 93px;
+  display: block;
+  width: 206px;
+  height: 80px;
+}
+.social-menu__link_footer {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.social-menu__icon_footer {
+  fill: var(--logo-bg-white-color);
+}
+
+.subscribe__block {
+  margin-right: auto;
+  margin-left: auto;
+}
+.subscribe__input {
+  padding: 15px 16px;
+
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: inherit;
+  color: var(--logo-bg-white-color);
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    outline-color: var(--accent-color);
+  }
+}
+
+.subscribe__input:not(:placeholder-shown):focus:invalid {
+  outline-color: #ff0000;
+}
+.subscribe__field {
+  position: relative;
+}
+.button_subscribe {
+  padding: 10px 62px 10px 29px;
+  &:hover,
+  &:focus {
+    color: var(--logo-bg-white-color);
+    background-color: var(--hero-but-hover);
+  }
+}
+.subscribe__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
+  cursor: pointer;
+}

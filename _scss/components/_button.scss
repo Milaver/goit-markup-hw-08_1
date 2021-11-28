@@ -1,0 +1,61 @@
+.button {
+  display: inline-block;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: 1.87;
+  min-width: 73px;
+  min-height: 50px;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  border: transparent;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--logo-bg-white-color);
+  background-color: var(--accent-color);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+}
+.hero--button,
+.form--button,
+.subscribe--button {
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero--button:hover,
+.hero--button:focus {
+  color: var(--logo-bg-white-color);
+  background-color: var(--hero-but-hover);
+}
+.button--primary,
+.button--secondary {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.button--primary:hover,
+.button--primary:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button--secondary {
+  color: var(--title-text-color);
+  background-color: var(--button-bg-color);
+  &:hover,
+  &:focus {
+    color: var(--logo-bg-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.button_subscribe {
+  padding: 10px 62px 10px 29px;
+  &:hover,
+  &:focus {
+    color: var(--logo-bg-white-color);
+    background-color: var(--hero-but-hover);
+  }
+}

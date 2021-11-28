@@ -1,0 +1,47 @@
+.logo {
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: calc(33.19 / 24);
+  text-decoration: none;
+  color: var(--logo-black-color);
+}
+.header__logo {
+  @include for-size(tablet-without) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @include for-size(tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+  @include for-size(desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-size: 2.6rem;
+    line-height: calc(31 / 26);
+  }
+}
+.link {
+  display: block;
+}
+.logo--accent-color {
+  color: var(--accent-color);
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+
+  color: var(--logo-bg-white-color);
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
+  &--accent-logo {
+    color: var(--accent-color);
+  }
+}
