@@ -222,7 +222,7 @@ img {
   color: var(--accent-color);
 }
 
-.close-btn-icon {
+.close-btn__icon {
   fill: currentColor;
 }
 
