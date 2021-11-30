@@ -113,7 +113,8 @@
   }
   .checkbox__input:checked + &::before {
     border: none;
-    background-image: url(./images/svg/icon-check.svg);
+    background-image: url(../images/svg/icon-check.svg);
+    background-color: var(--accent-color);
   }
   .checkbox__input:focus + &::before {
     outline: 1px solid var(--accent-color);

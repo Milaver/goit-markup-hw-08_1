@@ -227,7 +227,6 @@ img {
 }
 
 .burger-menu {
-  position: absolute;
   right: 15px;
   top: 10px;
   display: flex;
@@ -700,7 +699,8 @@ img {
 
 .checkbox__input:checked + .checkbox__label::before {
   border: none;
-  background-image: url(./images/svg/icon-check.svg);
+  background-image: url(../images/svg/icon-check.svg);
+  background-color: var(--accent-color);
 }
 
 .checkbox__input:focus + .checkbox__label::before {
@@ -720,55 +720,67 @@ img {
   color: var(--logo-bg-white-color);
 }
 
+.header {
+  /*Навигация */
+  /* Контакты */
+}
+
+.header .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
-  .header {
+  .header .header {
     background-color: var(--logo-bg-white-color);
     border-bottom: 1px solid #ececec;
   }
 }
 
-.header-container {
+.header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
-  .header-container {
+  .header .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-/*Навигация */
-.navigation {
+.header .navigation {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .navigation {
+  .header .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-.navigation__list {
+.header .navigation__list {
   display: flex;
 }
 
-.navigation__item {
+.header .navigation__item {
   position: relative;
 }
 
 @media (min-width: 768px) {
-  .navigation__item:not(:last-child) {
+  .header .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.navigation__link {
+.header .navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -777,16 +789,16 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.navigation__link:hover, .navigation__link:focus {
+.header .navigation__link:hover, .header .navigation__link:focus {
   color: var(--accent-color);
 }
 
-.navigation__link.current {
+.header .navigation__link.current {
   position: relative;
   color: var(--accent-color);
 }
 
-.navigation__link.current::after {
+.header .navigation__link.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -798,13 +810,12 @@ img {
   border-radius: 2px;
 }
 
-/* Контакты */
-.contacts {
+.header .contacts {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .contacts {
+  .header .contacts {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -812,7 +823,7 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .contacts {
+  .header .contacts {
     display: flex;
     flex-direction: row;
     margin-left: auto;
@@ -820,12 +831,12 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .contacts__item:not(:last-child) {
+  .header .contacts__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.contacts__link {
+.header .contacts__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -835,16 +846,16 @@ img {
   text-decoration: none;
 }
 
-.contacts__link:hover, .contacts__link:focus {
+.header .contacts__link:hover, .header .contacts__link:focus {
   color: var(--accent-color);
 }
 
-.contacts__icon {
+.header .contacts__icon {
   fill: var(--primary-text-color);
   transition: fill 250ms var(--timing-function);
 }
 
-.contacts__icon.leter {
+.header .contacts__icon.leter {
   width: 14px;
   height: 10px;
   margin-right: 8px;
@@ -852,14 +863,14 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .contacts__icon.leter {
+  .header .contacts__icon.leter {
     width: 16px;
     height: 12px;
     margin-right: 10px;
   }
 }
 
-.contacts__icon.smartphone {
+.header .contacts__icon.smartphone {
   width: 10px;
   height: 14px;
   margin-right: 8px;
@@ -867,15 +878,15 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .contacts__icon.smartphone {
+  .header .contacts__icon.smartphone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
   }
 }
 
-.contacts__icon:hover .contacts__icon,
-.contacts__icon:focus .contacts__icon {
+.header .contacts__icon:hover .contacts__icon,
+.header .contacts__icon:focus .contacts__icon {
   fill: var(--accent-color);
 }
 
