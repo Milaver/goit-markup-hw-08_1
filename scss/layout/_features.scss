@@ -57,6 +57,7 @@
   height: 120px;
 
   background-color: var(--secondary-bg-color);
+  margin-bottom: 30px;
 }
 
 .features__icon {
@@ -71,8 +72,6 @@
 
 .features__title {
   margin-bottom: 10px;
-  padding-top: 30px;
-
   font-weight: 700;
   font-size: 1.4rem;
   line-height: calc(16 / 14);
