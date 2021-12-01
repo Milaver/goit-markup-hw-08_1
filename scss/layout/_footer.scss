@@ -5,17 +5,17 @@
   background-color: var(--hero-footer-bg-color);
 }
 .footer-container {
-  text-align: center;
+  // text-align: center;
 
-  @include for-size(tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  // @include for-size(tablet) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-around;
+  // }
 
   @include for-size(desktop) {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: baseline;
   }
 }
