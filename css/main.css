@@ -968,13 +968,9 @@ img {
 }
 
 /*Наши преимущества*/
-.features {
-  padding: 60px 0px;
-}
-
 @media (min-width: 1200px) {
   .features {
-    padding: 0 15px;
+    padding: 94px 0px;
   }
 }
 
@@ -988,7 +984,6 @@ img {
 @media (min-width: 1200px) {
   .features__menu {
     display: flex;
-    padding-top: 94px;
   }
 }
 
@@ -1069,6 +1064,7 @@ img {
 /*Чем мы занимаемся*/
 .work {
   display: none;
+  padding: 0 0 94px;
 }
 
 @media (min-width: 1200px) {
@@ -1114,10 +1110,7 @@ img {
 
 .team {
   background-color: var(--secondary-bg-color);
-}
-
-.team__box {
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 
 @media (min-width: 1200px) {
@@ -1267,6 +1260,23 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .top-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 60px;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer__address {
   text-align: center;
   margin-bottom: 60px;
@@ -1285,25 +1295,25 @@ img {
   line-height: 1.71;
 }
 
-.address__item:not(:last-child) {
+.address .address__item:not(:last-child) {
   margin-bottom: 8px;
 }
 
-.address__link {
+.address .address__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
 }
 
-.address__link:hover, .address__link:focus {
+.address .address__link:hover, .address .address__link:focus {
   color: var(--accent-color);
 }
 
-.address__link_map {
+.address .address__link_map {
   color: var(--logo-bg-white-color);
 }
 
-.address__link_map:hover, .address__link_map:focus {
+.address .address__link_map:hover, .address .address__link_map:focus {
   color: var(--accent-color);
 }
 

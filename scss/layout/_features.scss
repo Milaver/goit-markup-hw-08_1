@@ -1,9 +1,9 @@
 /*Наши преимущества*/
 .features {
-  padding: 60px 0px;
+ 
 
   @include for-size(desktop) {
-    padding: 0 15px;
+    padding: 94px 0px;
   }
 }
 .features__menu {
@@ -15,7 +15,7 @@
   @include for-size(desktop) {
     display: flex;
 
-    padding-top: 94px;
+    // padding-top: 94px;
   }
 }
 .features__item {

@@ -1,6 +1,7 @@
 /*Чем мы занимаемся*/
 .work {
   display: none;
+  padding: 0 0 94px;
 
   @include for-size(desktop) {
     display: block;
